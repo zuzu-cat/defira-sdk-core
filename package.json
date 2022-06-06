@@ -1,17 +1,18 @@
 {
-  "name": "@uniswap/defira-core",
+  "name": "@zuzu-cat/defira-core",
   "license": "MIT",
   "version": "3.0.1",
-  "description": "⚒️ An SDK for building applications on top of Uniswap V3",
+  "description": "⚒️ An SDK for building applications on top of Defira DEX",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/zuzu-cat/defire-core",
+  "repository": "https://github.com/zuzu-cat/defira-core",
   "keywords": [
-    "uniswap",
-    "ethereum"
+    "defira",
+    "harmony",
+    "uniswap"
   ],
   "module": "dist/sdk-core.esm.js",
   "scripts": {
