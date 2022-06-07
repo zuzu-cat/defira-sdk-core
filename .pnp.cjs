@@ -17,14 +17,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "@zuzu-cat/defira-core",\
+        "name": "@zuzu-cat/defira-sdk-core",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@zuzu-cat/defira-core", ["workspace:."]]\
+      ["@zuzu-cat/defira-sdk-core", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -3356,11 +3356,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@zuzu-cat/defira-core", [\
+      ["@zuzu-cat/defira-sdk-core", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@zuzu-cat/defira-core", "workspace:."],\
+            ["@zuzu-cat/defira-sdk-core", "workspace:."],\
             ["@ethersproject/address", "npm:5.6.1"],\
             ["@types/big.js", "npm:4.0.5"],\
             ["@types/jest", "npm:24.9.1"],\
