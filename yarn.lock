@@ -2067,9 +2067,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zuzu-cat/defira-core@workspace:.":
+"@zuzu-cat/defira-sdk-core@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@zuzu-cat/defira-core@workspace:."
+  resolution: "@zuzu-cat/defira-sdk-core@workspace:."
   dependencies:
     "@ethersproject/address": ^5.0.2
     "@types/big.js": ^4.0.5
