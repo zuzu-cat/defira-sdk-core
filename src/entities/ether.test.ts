@@ -1,16 +1,16 @@
-import { Ether } from './ether'
+import { ONE } from './one'
 
-describe('Ether', () => {
+describe('ONE', () => {
   it('static constructor uses cache', () => {
-    expect(Ether.onChain(1) === Ether.onChain(1)).toEqual(true)
+    expect(ONE.onChain(1666600000) === ONE.onChain(1666600000)).toEqual(true)
   })
   it('caches once per chain ID', () => {
-    expect(Ether.onChain(1) !== Ether.onChain(2)).toEqual(true)
+    expect(ONE.onChain(1666600000) !== ONE.onChain(1666600001)).toEqual(true)
   })
   it('#equals returns false for diff chains', () => {
-    expect(Ether.onChain(1).equals(Ether.onChain(2))).toEqual(false)
+    expect(ONE.onChain(1666600000).equals(ONE.onChain(1666600001))).toEqual(false)
   })
   it('#equals returns true for same chains', () => {
-    expect(Ether.onChain(1).equals(Ether.onChain(1))).toEqual(true)
+    expect(ONE.onChain(1666600000).equals(ONE.onChain(1666600000))).toEqual(true)
   })
 })

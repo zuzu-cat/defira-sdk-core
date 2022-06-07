@@ -2,14 +2,14 @@ import invariant from 'tiny-invariant'
 import { Currency } from './currency'
 import { NativeCurrency } from './nativeCurrency'
 import { Token } from './token'
-import { WONE } from './wone'
+import { WONE } from './wone5'
 
 /**
- * Ether is the main usage of a 'native' currency, i.e. for Ethereum mainnet and all testnets
+ * ONE is the main usage of a 'native' currency, i.e. for ONEeum mainnet and all testnets
  */
-export class Ether extends NativeCurrency {
+export class ONE extends NativeCurrency {
   protected constructor(chainId: number) {
-    super(chainId, 18, 'ETH', 'Ether')
+    super(chainId, 18, 'ONE', 'ONE')
   }
 
   public get wrapped(): Token {
@@ -18,10 +18,10 @@ export class Ether extends NativeCurrency {
     return wone
   }
 
-  private static _etherCache: { [chainId: number]: Ether } = {}
+  private static _oneCache: { [chainId: number]: ONE } = {}
 
-  public static onChain(chainId: number): Ether {
-    return this._etherCache[chainId] ?? (this._etherCache[chainId] = new Ether(chainId))
+  public static onChain(chainId: number): ONE {
+    return this._oneCache[chainId] ?? (this._oneCache[chainId] = new ONE(chainId))
   }
 
   public equals(other: Currency): boolean {
