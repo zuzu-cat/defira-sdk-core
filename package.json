@@ -18,8 +18,11 @@
   "scripts": {
     "build": "tsdx build",
     "start": "tsdx watch",
+    "lint": "tsdx lint",
     "test": "tsdx test",
     "prepack": "tsdx build",
+    "prepublish": "tsdx lint test",
+    "prepublishOnly": "tsdx lint test",
     "postpack": "rimraf dist",
     "prepare": "tsdx build"
   },
