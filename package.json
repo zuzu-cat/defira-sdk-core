@@ -21,8 +21,8 @@
     "lint": "tsdx lint",
     "test": "tsdx test",
     "prepack": "tsdx build",
-    "prepublish": "tsdx lint test",
-    "prepublishOnly": "tsdx lint test",
+    "prepublish": "tsdx lint && tsdx test",
+    "prepublishOnly": "tsdx lint && tsdx test",
     "postpack": "rimraf dist",
     "prepare": "tsdx build"
   },
